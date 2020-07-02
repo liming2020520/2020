@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../dist/css/SignIn.min.css">
+    <script src="../src/js/verification.js" defer></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+ 
+    <div id="signUp">
+      <div>
+        <img src="../img/1.png" alt="logo">
+          <h2>360注册账号</h2>
+        <form  >
+          <label for="username">
+            <i>用户名</i><input type="text" id="username" placeholder="请输入用户名">
+            <span>1</span>
+          </label>
+          <label for="password">
+            <i>密码</i><input type="password" id="password"placeholder="密码">
+            <span></span>
+          </label>
+          <label for="tel">
+            <i>手机号码</i><input type="tel" id="tel" placeholder="手机号码">
+            <span></span>
+          </label>
+          <label for="email">
+            <i>邮箱</i><input type="email" id="email" placeholder="邮箱">
+            <span></span>
+          </label>
+          <button type="submit" id="submit" disabled>立即注册</button>
+        </form>
+      </div>
+    </div>
+
+       <!-- footer 开始-->
+       <div class="container-fluid">
+        <iframe src="tail.html"frameborder="0"id="indexFoot"scrolling="No"></iframe>
+      </div>
+   <!-- footer结束 -->
+    <script>
+        $('#submit').click(() => {
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost:3001/',
+                data: {
+                    username: $('#username').val(),
+                    password: $("#password").val(),
+                    tel: $("#tel").val(),
+                    email: $("#email").val(),
+                },
+                datatype: 'json',
+                success: function (res) {
+                    console.log(res)
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

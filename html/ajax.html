@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    </form>
+    <script>
+        var form=document.querySelector("form");
+        var input=document.querySelectorAll("input");
+        
+        function ajax(url){
+            var xhr=new XMLHttpRequest();
+        xhr.addEventListener("load",loadHandler);
+        xhr.open("GET",url);
+        xhr.send();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+        .goodsCon{
+            background: #fff;
+            box-sizing: border-box;
+            color: #333;
+            display: block;
+            position: relative;
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            padding: 30px 20px;
+            text-align: center;
+            width: 280px;
+            border-radius: 4px;
+            float: left;
+            height: 460px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .goodImg{height: 240px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 80px;
+         width: 240px;}
+        .goodsNewthing{background: #f17f38;
+            color: #fff;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 80px;}
+        .goodtitle{font-size: 18px;
+            line-height: 25px;
+            margin-top: 30px;
+            position: absolute;
+            left: 0;
+            top:340px;
+            right: 0;
+            margin: 0 auto;
+            
+            overflow: hidden;
+            color: #333;
+            text-overflow: ellipsis;
+            white-space: nowrap;}
+        .goodinfo{color: #999;
+             overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: absolute;
+            left: 0;
+            top:365px;
+            right: 0;
+            margin: 0 auto;
+            font-size: 12px;}
+        .goodprice{    line-height: 36px;
+            position: absolute;
+            left: 0;
+            top:395px;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;}
+        .price{    color: #dd0e00;
+            font-size: 20px;}
+        .oldPrice{color: #999;
+            font-size: 14px;
+            text-decoration: line-through;}
+            a{text-decoration: none;}
+            #goods{
+                width: 1180px;
+                height: 960px;
+                margin-top: 10px;
+            }
+            .goodbiga{    border-radius: 4px;
+                float: left;
+                height: 460px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                display: block;
+                width: 580px;
+                overflow: hidden;}
+            .bigimg{width: 100%;
+                height: 100%;}
+            #goods .goodsCon:nth-of-type(3){
+                margin-right: 0;
+            }
+            #goods .goodsCon:nth-of-type(7){
+                margin-right: 0;
+            }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <script type="module">
+      import Utils from "./../js/Utils.js";
+ 
+         var ids,input;
+         var step=1;
+         init();
+         function init(){
+             var div=Utils.ce("div",{
+                 width:"80px",
+                 height:"22px",
+                 position:"absolute"
+             });
+             createBnList(div);
+             cteateInput(div);
+             document.body.appendChild(div);
+         }
+ 
+        function createBnList(parent){
+            var leftBn=Utils.ce("div",{
+                width:"15px",
+                height:"20px",
+                position:"absolute",
+                textAlign:"center",
+                border:"1px solid #CCCCCC"
+            });
+            var rightBn=leftBn.cloneNode(false);
+            leftBn.style.left="0px";
+            rightBn.style.right="0px";
+            leftBn.textContent="-";
+            rightBn.textContent="+";
+            parent.appendChild(leftBn);
+            parent.appendChild(rightBn);
+            leftBn.addEventListener("mousedown",mouseHandler);
+            rightBn.addEventListener("mousedown",mouseHandler);
+            leftBn.addEventListener("click",clickHandler);
+            rightBn.addEventListener("click",clickHandler);
+        }
+ 
+        function cteateInput(parent){
+            input=Utils.ce("input",{
+                width:"46px",
+                height:"18px",
+                position:"absolute",
+                left:"17px",
+                border:"none",
+                textAlign:"center",
+                borderTop:"1px solid #CCCCCC",
+                borderBottom:"1px solid #CCCCCC"
+            });
+            input.value="1";
+            parent.appendChild(input);
+            input.addEventListener("input",inputHandler);
+        }
+ 
+        function mouseHandler(e){
+            e.preventDefault();
+        }
+ 
+        function inputHandler(e){
+         //    限制输入非数字
+             this.value=this.value.replace(/\D/g,"");
+             // 节流
+             if(ids) return;
+             ids=setTimeout(function(input){
+                 clearTimeout(ids);
+                 ids=0;
+                 setStep(input.value);
+             },500,this);
+        }
+ 
+        function clickHandler(e){
+             if(this.textContent==="-"){
+                 setStep(step-1);
+             }else{
+                 setStep(step+1);
+             }
+        }
+ 
+        function setStep(value){
+            value=Number(value);
+            if(value<1) value=1;
+            if(value>999) value=999;
+            step=value;
+            input.value=step;
+        }
+     </script>
+  </body>
+</html>

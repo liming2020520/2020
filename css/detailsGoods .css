@@ -1,0 +1,207 @@
+.same  {width: 1240px;}
+.nbottom{position: relative;
+    right: -60px;}
+#list1{width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #333;}
+.listheader{background:#333;
+    height: 50px;
+    width: 230px;
+    padding: 0;
+    text-align: center;}
+.listheader a{ font-size: 16px;
+    line-height: 50px;
+    display: block;
+    width: 150px;
+    color: #fff;
+
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.listba{background: url(../img/46.png) no-repeat;
+    background-size: 15px 15px;
+    height: 15px;
+    display:inline-block;
+    vertical-align: -2px;
+    width: 15px;}
+/* main  */
+#main{height:670px;
+    padding-top: 40px;}
+.mainleft{width: 482px;
+    height: 100%;
+    margin-right: 80px;
+    float: left;}
+.mainleft img{display: inline-block;}
+.main-right{width:678px ;
+    position: relative;
+    
+    height: 389px;
+    float: left;}
+.mlbox{width: 678px;
+    height: 170px;}
+.mltitle{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    line-height: 25px;
+    width: 678px;
+    height: 24px;
+}
+.mrinfo{    color: #F33;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 7px;
+}
+.mrlink{color: #2661B2;
+    margin-right: 5px;
+    font-size: 14px;
+    text-decoration: underline;}
+.mrcircuit{width: 678px;
+    position: absolute;
+    top: 83px;
+    height: 5px;
+    background: #F0F0F0;}
+.mrback{width: 678px;
+    height: 128px;
+    position: absolute;
+    top:88px;
+    background-color: #fafafa;}
+.mrprice{width: 45px;
+    line-height: 24px;
+    position: absolute;
+    top:103px ;
+    left: 15px;
+    height: 24px;
+    color: #333;
+    font-size: 14px;}
+.mrprice1{
+    color: #fa5437;
+    line-height: 24px;
+    position: absolute;
+    top:103px ;
+    left: 65px;
+    font-weight: 600;
+    font-size: 24px;}
+.mrprice2{text-decoration: line-through;
+    color: #333;
+    line-height: 24px;
+    position: absolute;
+    top:107px ;
+    left: 132px;
+    font-size: 12px;}
+.juan{line-height: 24px;
+        width: 643px;
+        position: absolute;
+        top: 135px;
+        height: 24px;
+    padding: 0 20px 16px 15px;}
+.juan-title{line-height: 24px;
+    font-size: 14px;
+    float: left;
+    color: #333;
+    padding-right: 12px;}
+.juan1{width: 130px;    
+    height: 18px;
+    background: #FFEBE9;
+    border: 1px solid #F33;
+    text-align: center;
+    margin-top: 2px;
+    color: #F33;
+    margin-right: 10px;
+    font-size: 12px;
+    float: left;
+    font-weight: 400;
+    line-height: 18px;}
+.gifThing{line-height: 24px;
+        width: 643px;
+        position: absolute;
+        top: 170px;
+        height: 24px;
+    padding: 0 20px 16px 15px;}
+.gifThing-title{line-height: 24px;
+    font-size: 14px;
+    float: left;
+    color: #333;
+    padding-right: 12px;}
+.gifThing1{background: #FFEBE9;
+    border-radius: 15px;
+    float: left;
+    margin-top: 3px;
+    color: #F33;
+    display: inline-block;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 0 8px;
+    }
+.gifThing2{float: left;
+    color: #666;
+    margin-left: 8px;
+    font-size: 12px;}
+.gifThing2:hover{border-bottom: 1px solid #666;}
+.mlbox1{width: 678px;
+    height: 200px;
+    position: absolute;
+    top:216px ;}
+.fenlei{line-height: 24px;
+    width: 643px;
+    height: 65px;
+    padding: 0 20px 16px 15px;}
+.mlbox1 .fenlei .fenlei-title{font-size: 14px;
+    float: left;
+    margin: 0;
+    color: #999;}
+.fenlei div:nth-child(1){margin-left: 18px;}
+.fenlei1{float: left;
+    width: 600px;}
+.amount-title{line-height: 24px;
+    font-size: 14px;
+    float: left;
+    padding-top:3px;
+    color: #999;
+    padding-right: 12px;}
+.amount{width: 643px;
+    height: 50px;
+    float: left;
+    padding: 0 20px 16px 15px;}
+.amount1{height: 30px;
+    width: 200px;
+    float: left;}
+.jifen-title{line-height: 24px;
+    font-size: 14px;
+    float: left;
+    padding-top:3px;
+    color: #999;
+    padding-right: 12px;}
+.jifen{width: 643px;
+    height: 65px;
+    float: left;
+    padding: 0 20px 16px 15px;}
+.jifen1{height: 30px;
+    width: 200px;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    float: left;}
+.jifen2{font-size: 14px;
+    color:#333;}
+.dividing{width: 100%;
+    height: 3px;
+    background-color: #666;}
+.shopbn{margin-top: 300px;
+    width: 200px;
+    height: 38px;
+    border:1px solid #f33;
+    text-align: center;
+    border-radius: 6px;
+    line-height: 38px;
+    font-size: 20px;
+    display:inline-block;}
+.shopbn1{    background: #FFEBE9;
+    margin-right: 20px;
+    color: #f33;}
+.shopbn2{color: #fff;
+    background:linear-gradient(180deg,#F33 0,#F63 100%);}
